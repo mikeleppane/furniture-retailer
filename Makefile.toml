@@ -13,7 +13,7 @@ script = [
     "echo \"Running cargo fmt\"",
     "cargo fmt -- --check",
     "echo \"Running cargo clippy\"",
-    "cargo clippy -- -D warnings",
+    "cargo clippy -- -D warnings -W clippy::all -W clippy::pedantic -W clippy::nursery",
     "echo \"Running cargo test\"",
     "cargo test",
 ]
